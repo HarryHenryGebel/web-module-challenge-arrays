@@ -82,10 +82,10 @@ function addFlavor(arrayToChange, flavor){
    For example removeLastFlavor(originalFlavors) would return
    ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/
 
-function removeLastFlavor(/*code here*/){
-
-    /*code here*/
-
+function removeLastFlavor(arrayToChange){
+    arrayToChange.pop();
+    console.log(`[${arrayToChange}]`);
+    return arrayToChange;
 }
 
 /* Task 4: Write a function that returns a flavor at a given index in
