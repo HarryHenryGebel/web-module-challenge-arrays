@@ -62,9 +62,10 @@ function is31Flavors(testArray) {
 
    For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */
 
-function addFlavor(originalArray, flavor){
-    originalArray.unshift(flavor);
-    console.log(`[${originalArray}]`);
+function addFlavor(arrayToChange, flavor){
+    arrayToChange.unshift(flavor);
+    console.log(`[${arrayToChange}]`);
+    return arrayToChange;
 }
 
 
