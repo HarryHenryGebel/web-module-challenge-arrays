@@ -1,4 +1,4 @@
-mvar originalFlavors = ["Banana Nut Fudge",
+var originalFlavors = ["Banana Nut Fudge",
                        "Black Walnut",
                        "Burgundy Cherry",
                        "Butterscotch Ribbon",
