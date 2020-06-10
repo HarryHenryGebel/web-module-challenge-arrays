@@ -48,6 +48,7 @@ var originalFlavors = ["Banana Nut Fudge",
 function is31Flavors(testArray) {
     return testArray.length === 31;
 }
+is31Flavors(originalArray);
 
 /* Task 2: Corporate has come to you with an idea for a new flavor:
  * Rainbow Sherbert! They think this will be a game changer. You need
