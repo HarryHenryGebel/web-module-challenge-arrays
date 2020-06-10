@@ -155,11 +155,13 @@ removeFlavorByName(originalFlavors, "Vanilla");
    and should return a new array that is identical to the old
    array. You can name the new array however you'd like. */
 
-function copy(/*code here*/){
-
-    /*code here*/
-
+function copy(newFlavorArray, originalFlavors){
+    for (flavor of originalFlavors){
+        newFlavorArray.push(flavor);
+    }
+    return newFlavorArray;
 }
+var originalOriginalFlavors = copy([], originalFlavors);
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants
  * to create promotional materials highlighting all of their chocolate
