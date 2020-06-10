@@ -67,7 +67,7 @@ function addFlavor(arrayToChange, flavor){
     console.log(`[${arrayToChange}]`);
     return arrayToChange;
 }
-
+addFlavor(originalFlavors, "Rainbow Sherbert");
 
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the
  * array! Your task is to remove an item from the end of the array.
@@ -87,6 +87,7 @@ function removeLastFlavor(arrayToChange){
     console.log(`[${arrayToChange}]`);
     return arrayToChange;
 }
+removeLastFlavor(originalFlavors);
 
 /* Task 4: Write a function that returns a flavor at a given index in
  * the array.
@@ -103,6 +104,7 @@ function removeLastFlavor(arrayToChange){
 function getFlavorByIndex(flavors, index){
     return flavors[index];
 }
+getFlavorByIndex(originalFlavors, 2);
 
 /* Task 5: As corporate wants to add more and more flavors to their
  * lineup, they've realized that they need to remove flavors based on
