@@ -123,7 +123,6 @@ getFlavorByIndex(originalFlavors, 2);
    except Vanilla.
 
    Hint: You can use .splice() for this
-
 */
 
 function removeFlavorByName(originalArray, flavorToRemove){
