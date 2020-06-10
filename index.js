@@ -45,10 +45,8 @@ mvar originalFlavors = ["Banana Nut Fudge",
 
    i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-function is31Flavors(/*code here*/){
-
-    /*code here*/
-
+function is31Flavors(testArray) {
+    return testArray.length === 31;
 }
 
 /* Task 2: Corporate has come to you with an idea for a new flavor:
