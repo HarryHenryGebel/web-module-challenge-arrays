@@ -28,7 +28,7 @@ var originalFlavors = ["Banana Nut Fudge",
                        "Rocky Road",
                        "Strawberry",
                        "Vanilla",
-                       "Vanilla Burnt Almond"]
+                       "Vanilla Burnt Almond"];
 
 /* Task 1: Confirm that the array is exactly 31 flavors. Your function
  * should accept:
