@@ -126,11 +126,23 @@ getFlavorByIndex(originalFlavors, 2);
 
 */
 
-function removeFlavorByName(/*code here*/){
+function removeFlavorByName(originalArray, flavorToRemove){
+    // This is so wrong, on multiple levels. Firstly, don't teach new
+    // programmers to write functions with side effects.
 
-    /*code here*/
+    // sanity check arguments
+    if (flavorToRemove === "Vanilla") {
+        console.log("You are making God cry! Will remove Banana Nut Fudge, in order to make the devil cry instead.");
+        removeFlavorByName(originalArray, "Banana Nut Fudge");
+        return;
+    }
 
+    const indexOfFlavor = originalArray.indexOf(flavorToRemove);
+    if (indexOfFlavor != -1) { // make sure it was a real flavor
+        originalArray.splice(indexOfFlavor, 1);
+    }
 }
+removeFlavorByName(originalFlavors, "Vanilla");
 
 
 /* Task 6: With all of these changes going on, we don't want to lose
