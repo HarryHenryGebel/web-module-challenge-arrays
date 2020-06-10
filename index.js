@@ -186,10 +186,21 @@ var originalOriginalFlavors = copy([], originalFlavors);
 
    hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
+function filterByWord(arrayToFilter, searchString) {
+    const newArray = [];
+    searchString = searchString.toLowerCase();
 
-    /*code here*/
+    for (item of arrayToFilter)
+    {
+        if (item.toLowerCase().includes(searchString)) {
+            console.log("match");
+            newArray.push(item);
+        } else {
+            console.log(`!${item} : ${searchString}`)
+        }
+    }
 
+    return newArray;
 }
 
 
