@@ -100,10 +100,8 @@ function removeLastFlavor(arrayToChange){
    "Black Walnut", assuming Rainbow Sherbert has been added
    successfully. */
 
-function getFlavorByIndex(/*code here*/){
-
-    /*code here*/
-
+function getFlavorByIndex(flavors, index){
+    return flavors[index];
 }
 
 /* Task 5: As corporate wants to add more and more flavors to their
