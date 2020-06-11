@@ -257,7 +257,7 @@ var newFlavors = ["Date night",
                   "Chocolate Fudge",
                   "Daiquiri Ice",
                   "Rainbow Sherbet",
-                  "Rainbow Swirl"]
+                  "Rainbow Swirl"];
 var seasonalFlavors = ["America's Birthday Cake",
                        "Baseball Nut®",
                        "Blueberry Cheesecake",
@@ -281,7 +281,7 @@ var seasonalFlavors = ["America's Birthday Cake",
                        "made with Snickers®",
                        "made with M&M's®",
                        "Heath®",
-                       "Mango Tango",]
+                       "Mango Tango",];
 var regionalFlavors = ["Pink Bubblegum",
                        "Caramel Macchiato",
                        "York Peppermint Pattie",
