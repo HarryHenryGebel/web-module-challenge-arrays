@@ -193,16 +193,13 @@ function filterByWord(arrayToFilter, searchString) {
     for (item of arrayToFilter)
     {
         if (item.toLowerCase().includes(searchString)) {
-            console.log("match");
             newArray.push(item);
-        } else {
-            console.log(`!${item} : ${searchString}`)
         }
     }
 
     return newArray;
 }
-
+console.log(`[${filterByWord(orginalFlavors, "chocolate")}]`);
 
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/
