@@ -199,7 +199,7 @@ function filterByWord(arrayToFilter, searchString) {
 
     return newArray;
 }
-console.log(`[${filterByWord(orginalFlavors, "chocolate")}]`);
+console.log(`[${filterByWord(originalFlavors, "chocolate")}]`);
 
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/
