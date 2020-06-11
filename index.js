@@ -311,15 +311,15 @@ function getRandomFlavors(originalArray,
                           newArray,
                           seasonalArray,
                           regionalArray) {
-    const options = originalFlavors.concat(newArray,
-                                           seasonalArray,
-                                           regionalArray);
+    const options = originalArray.concat(newArray,
+                                         seasonalArray,
+                                         regionalArray);
     const returnArray = [];
 
     for (_ = 0; _ < 31; _++) {
-        const randomIndex = Math.floor(Math.random() * 31);
+        const randomIndex = Math.floor(Math.random() * options.length);
         // remove item from options, then push it to returnArray
-        const item = options.splice(_, 1)[0];
+        const item = options.splice(randomIndex, 1)[0];
         returnArray.push(item);
     }
     return returnArray;
