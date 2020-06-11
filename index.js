@@ -305,10 +305,26 @@ var regionalFlavors = ["Pink Bubblegum",
                        "Cotton Candy Crackle",
                        "Quarterback Crunch",
                        "Chocolate Chocolate Chip Cheesecake",
-                       "Caramel 'n' Cookies"]
+                       "Caramel 'n' Cookies"];
 
-function getRandomFlavors(/*code here*/){
+function getRandomFlavors(originalArray,
+                          newArray,
+                          seasonalArray,
+                          regionalArray) {
+    const options = originalFlavors.concat(newArray,
+                                           seasonalArray,
+                                           regionalArray);
+    const returnArray = [];
 
-    /*code here*/
-
+    for (_ = 0; _ < 31; _++) {
+        const randomIndex = Math.floor(Math.random() * 31);
+        // remove item from options, then push it to returnArray
+        const item = options.splice(_, 1)[0];
+        returnArray.push(item);
+    }
+    return returnArray;
 }
+console.log(`[${getRandomFlavors(originalFlavors,
+                                 newFlavors,
+                                 seasonalFlavors,
+                                 regionalFlavors)}]`);
